@@ -1,12 +1,12 @@
+/* 1. Imports must come first */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* 2. Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* =========================
-   FONTS
-========================= */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-
+/* 3. Custom Font Faces */
 @font-face {
   font-family: 'CameraPlainVariable';
   src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
@@ -70,7 +70,12 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Space Grotesk', system-ui, sans-serif;
   letter-spacing: -0.02em;
 }
@@ -93,11 +98,9 @@ h1, h2, h3, h4, h5, h6 {
    BACKGROUNDS
 ========================= */
 .bg-gradient-hero {
-  background: radial-gradient(
-    circle at top,
-    rgba(255, 215, 0, 0.15),
-    transparent 60%
-  );
+  background: radial-gradient(circle at top,
+      rgba(255, 215, 0, 0.15),
+      transparent 60%);
 }
 
 /* =========================
@@ -197,6 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
