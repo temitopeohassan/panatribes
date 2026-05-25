@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div>© 2025 Panatribes Nigeria. All rights reserved.</div>
+          <div>© 2026 Panatribes Nigeria. All rights reserved.</div>
           <div className="payment-icons">
             <span className="payment-icon">Paystack</span>
             <span className="payment-icon">Flutterwave</span>
