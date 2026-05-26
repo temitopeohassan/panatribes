@@ -22,8 +22,18 @@ const Header = ({ onMenuOpen }) => {
 
       <header className="header">
         <div className="header-inner">
-          <Link to="/" className="logo">
-            <img src="/logo.png" alt="TechMart" className="logo-img" />
+          <Link to="/" className="logo-mark" aria-label="Panatribes Global home">
+            <span className="logo-mark-icon">
+              <img 
+                alt="Panatribes Global" 
+                className="logo-mark-img"
+                src="/nav-logo.png" 
+              />
+            </span>
+            <span className="logo-mark-text">
+              <span className="logo-mark-title">Panatribes</span>
+              <span className="logo-mark-subtitle">Global Co.</span>
+            </span>
           </Link>
 
 

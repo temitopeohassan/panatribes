@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-grid">
           <div>
             <Link to="/" className="footer-logo">
-              <img src="/logo.png" alt="TechMart" className="footer-logo-img" />
+              <img src="/footer-logo.png" alt="Panatribes Global" className="footer-logo-img" />
             </Link>
             <p className="footer-about">
               Nigeria's premium destination for quality UK-used and brand new electronics & gadgets.
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <div>© 2026 Panatribes Nigeria. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Panatribes Nigeria. All rights reserved.</div>
           <div className="payment-icons">
             <span className="payment-icon">Paystack</span>
             <span className="payment-icon">Flutterwave</span>
