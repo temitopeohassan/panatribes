@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import MobileMenu from './MobileMenu';
+import ScrollToTop from './ScrollToTop';
 
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       <main>{children}</main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };

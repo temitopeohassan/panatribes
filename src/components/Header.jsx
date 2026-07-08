@@ -1,81 +1,68 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
+import { useTheme } from '../context/ThemeContext';
+import AccountDropdown from './AccountDropdown';
 
 const Header = ({ onMenuOpen }) => {
-  const { cart, wishlist, getCartCount } = useShop();
-  const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      navigate(`/shop?q=${encodeURIComponent(searchQuery.trim())}`);
-    }
-  };
+  const { getCartCount, user } = useShop();
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <>
-      <div className="topbar">
-        🚀 Free shipping on orders over ₦50,000 — <Link to="/shop">Shop Now →</Link>
-      </div>
+    <header className="header">
+      <div className="header-inner">
+        <Link to="/" className="logo-mark" aria-label="Panatribes Global home">
+          <span className="logo-mark-icon">
+            <img
+              alt="Panatribes Global"
+              className="logo-mark-img"
+              src={theme === 'light' ? '/light-logo.png' : '/nav-logo.png'}
+            />
+          </span>
+          <span className="logo-mark-text">
+            <span className="logo-mark-title">Panatribes</span>
+            <span className="logo-mark-subtitle">Global Co.</span>
+          </span>
+        </Link>
 
-      <header className="header">
-        <div className="header-inner">
-          <Link to="/" className="logo-mark" aria-label="Panatribes Global home">
-            <span className="logo-mark-icon">
-              <img 
-                alt="Panatribes Global" 
-                className="logo-mark-img"
-                src="/nav-logo.png" 
-              />
-            </span>
-            <span className="logo-mark-text">
-              <span className="logo-mark-title">Panatribes</span>
-              <span className="logo-mark-subtitle">Global Co.</span>
-            </span>
-          </Link>
+        <nav className="header-nav">
+          <Link to="/shop" className="nav-link">Shop</Link>
+          <Link to="/solar" className="nav-link">Solar & Power</Link>
+          <Link to="/business" className="nav-link">Business</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
+          <Link to="/wishlist" className="nav-link">Wishlist</Link>
+        </nav>
 
-
-
-          <div className="header-actions">
-            <Link to="/account" className="icon-btn" title="Account">
-              👤
-            </Link>
-            <Link to="/wishlist" className="icon-btn" title="Wishlist">
-              🤍
-              {wishlist.length > 0 && (
-                <span className="count wishlist-count">{wishlist.length}</span>
-              )}
-            </Link>
-            <Link to="/cart" className="icon-btn" title="Cart">
-              🛒
-              {getCartCount() > 0 && (
-                <span className="count cart-count">{getCartCount()}</span>
-              )}
-            </Link>
-            <button className="icon-btn hamburger" title="Menu" onClick={onMenuOpen}>
-              ☰
-            </button>
+        <div className="header-actions">
+          <div className="header-auth-desktop">
+            {user ? (
+              <AccountDropdown />
+            ) : (
+              <Link to="/login" className="header-auth-link">Log in</Link>
+            )}
           </div>
-        </div>
-      </header>
 
-      <nav className="nav">
-        <div className="nav-inner">
-          <Link to="/shop?cat=phones" className="nav-link">📱 Phones</Link>
-          <Link to="/shop?cat=laptops" className="nav-link">💻 Laptops</Link>
-          <Link to="/shop?cat=tablets" className="nav-link">📟 Tablets</Link>
-          <Link to="/shop?cat=audio" className="nav-link">🎧 Audio</Link>
-          <Link to="/shop?cat=wearables" className="nav-link">⌚ Wearables</Link>
-          <Link to="/shop?cat=gaming" className="nav-link">🎮 Gaming</Link>
-          <Link to="/shop?cat=accessories" className="nav-link">🔌 Accessories</Link>
-          <Link to="/shop?sale=1" className="nav-link" style={{ color: 'var(--danger)' }}>
-            🔥 Sales
+          <button
+            onClick={toggleTheme}
+            className="icon-btn theme-toggle"
+            title={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            style={{ fontSize: '1rem' }}
+          >
+            {theme === 'dark' ? '☀️' : '🌙'}
+          </button>
+          <Link to="/cart" className="icon-btn" title="Cart">
+            🛒
+            {getCartCount() > 0 && (
+              <span className="count cart-count">{getCartCount()}</span>
+            )}
           </Link>
+          <button className="icon-btn hamburger" title="Menu" onClick={onMenuOpen}>
+            ☰
+          </button>
         </div>
-      </nav>
-    </>
+      </div>
+    </header>
   );
 };
 

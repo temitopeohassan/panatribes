@@ -2,9 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import Newsletter from '../components/Newsletter';
-import { products } from '../data/products';
+import { useShop } from '../context/ShopContext';
 
 const Home = () => {
+  const { products, categories, loading, error } = useShop();
+
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh', flexDirection: 'column', gap: '20px' }}>
+        <div className="spinner" style={{ width: '40px', height: '40px', border: '4px solid #f3f3f3', borderTop: '4px solid var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
+        <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
+        <p>Loading our latest arrivals...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
+        <h2>Something went wrong</h2>
+        <p>{error}</p>
+        <button onClick={() => window.location.reload()} className="btn btn-primary" style={{ marginTop: 20 }}>Try Again</button>
+      </div>
+    );
+  }
+
   const featuredProducts = products.slice(0, 4);
   const bestSellers = products.slice(4, 8);
 
@@ -14,39 +36,24 @@ const Home = () => {
       <section className="hero">
         <div className="hero-grid">
           <div className="hero-content">
-            <div className="hero-eyebrow">🔥 New Arrivals 2025</div>
+            <div className="hero-eyebrow">🔥 New Arrivals </div>
             <h1 className="hero-title">
-              Premium Gadgets<br />
-              at <em>Honest</em> Prices
+            The devices you trust.<br />
+            The power  <em>that keeps </em> them running.
             </h1>
             <p className="hero-desc">
-              Curated UK-used and brand new electronics — iPhones, MacBooks, Samsung, and more.
-              Quality-checked, warranty-backed, nationwide delivery.
+            Smartphones, laptops, audio, and accessories — paired with portable power stations, solar kits, and backup systems built for Nigerian homes and businesses.
             </p>
             <div className="hero-cta">
               <Link to="/shop" className="btn btn-primary">🛒 Shop Now</Link>
               <Link to="/shop?sale=1" className="btn btn-outline">🔥 View Deals</Link>
             </div>
-            <div className="hero-stats">
-              <div>
-                <div className="hero-stat-value">50K+</div>
-                <div className="hero-stat-label">Happy Customers</div>
-              </div>
-              <div>
-                <div className="hero-stat-value">2,000+</div>
-                <div className="hero-stat-label">Products</div>
-              </div>
-              <div>
-                <div className="hero-stat-value">4.9★</div>
-                <div className="hero-stat-label">Avg Rating</div>
-              </div>
-            </div>
           </div>
           <div className="hero-image-wrap">
             <div className="hero-img-bg">
               <img className="hero-product-img"
-                src="https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=600&q=80"
-                alt="iPhone 15 Pro"
+                src="/assets/hero-power-BOlF7ZUY.jpg"
+                alt="Portable power station"
               />
               <div className="hero-badge-float top">
                 <span className="icon">✅</span>
@@ -61,39 +68,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <div className="banner-strip">
-        <div className="banner-strip-grid">
-          <div className="strip-item">
-            <div className="strip-icon">🚚</div>
-            <div>
-              <div className="strip-title">Free Delivery</div>
-              <div className="strip-sub">Orders above ₦50,000</div>
-            </div>
-          </div>
-          <div className="strip-item">
-            <div className="strip-icon">🔒</div>
-            <div>
-              <div className="strip-title">Secure Payment</div>
-              <div className="strip-sub">Paystack & Flutterwave</div>
-            </div>
-          </div>
-          <div className="strip-item">
-            <div className="strip-icon">🔄</div>
-            <div>
-              <div className="strip-title">Easy Returns</div>
-              <div className="strip-sub">7-day return policy</div>
-            </div>
-          </div>
-          <div className="strip-item">
-            <div className="strip-icon">🛡️</div>
-            <div>
-              <div className="strip-title">Warranty</div>
-              <div className="strip-sub">3–12 months on all items</div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* CATEGORIES */}
       <section className="section">
@@ -107,27 +81,15 @@ const Home = () => {
           </div>
 
           <div className="category-row">
-            <Link to="/shop?cat=phones" className="cat-pill active">
-              <span className="icon">📱</span> Phones
-            </Link>
-            <Link to="/shop?cat=laptops" className="cat-pill">
-              <span className="icon">💻</span> Laptops
-            </Link>
-            <Link to="/shop?cat=tablets" className="cat-pill">
-              <span className="icon">📟</span> Tablets
-            </Link>
-            <Link to="/shop?cat=audio" className="cat-pill">
-              <span className="icon">🎧</span> Audio
-            </Link>
-            <Link to="/shop?cat=wearables" className="cat-pill">
-              <span className="icon">⌚</span> Wearables
-            </Link>
-            <Link to="/shop?cat=gaming" className="cat-pill">
-              <span className="icon">🎮</span> Gaming
-            </Link>
-            <Link to="/shop?cat=accessories" className="cat-pill">
-              <span className="icon">🔌</span> Accessories
-            </Link>
+            {categories.map((cat) => (
+              <Link
+                key={cat.key}
+                to={cat.key === 'all' ? '/shop' : `/shop?cat=${cat.key}`}
+                className={`cat-pill${cat.key === 'all' ? ' active' : ''}`}
+              >
+                <span className="icon">{cat.icon}</span> {cat.label}
+              </Link>
+            ))}
           </div>
 
           {/* FEATURED PRODUCTS */}
@@ -139,35 +101,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* PROMO BANNERS */}
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div className="promo-grid">
-            <Link to="/shop?cat=phones" className="promo-card accent-bg">
-              <div>
-                <div className="promo-eyebrow">Flash Sale</div>
-                <div className="promo-title">Phones from<br />₦150,000</div>
-                <div className="btn btn-outline" style={{ borderColor: 'rgba(255,255,255,.4)', color: '#fff' }}>Shop Phones →</div>
-              </div>
-              <img className="promo-img"
-                src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300&q=80"
-                alt="Phones"
-              />
-            </Link>
-            <Link to="/shop?cat=laptops" className="promo-card">
-              <div>
-                <div className="promo-eyebrow">Up to 25% Off</div>
-                <div className="promo-title">Laptops &<br />MacBooks</div>
-                <div className="btn btn-primary">Shop Laptops →</div>
-              </div>
-              <img className="promo-img"
-                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=300&q=80"
-                alt="Laptops"
-              />
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* BEST SELLERS */}
       <section className="section" style={{ paddingTop: 0 }}>
@@ -202,6 +135,32 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* TRUST STRIP */}
+      <div className="banner-strip">
+        <div className="banner-strip-grid">
+           <div className="strip-item">
+            <div className="strip-icon">🔒</div>
+            <div>
+              <div className="strip-title">Secure Payment</div>
+              <div className="strip-sub">Paystack</div>
+            </div>
+          </div>
+          <div className="strip-item">
+            <div className="strip-icon">🔄</div>
+            <div>
+              <div className="strip-title">Easy Returns</div>
+              <div className="strip-sub">7-day return policy</div>
+            </div>
+          </div>
+          <div className="strip-item">
+            <div className="strip-icon">🛡️</div>
+            <div>
+              <div className="strip-title">Warranty</div>
+              <div className="strip-sub">3–12 months on selected items</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Newsletter />
     </>

@@ -1,24 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
-import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 
 const ProductDetails = () => {
   const { id } = useParams();
-  const { addToCart, toggleWishlist, wishlist } = useShop();
+  const { products, addToCart, toggleWishlist, wishlist, loading } = useShop();
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState('');
   const [qty, setQty] = useState(1);
 
   useEffect(() => {
-    const found = products.find(p => p.id === id);
+    if (loading) return;
+    
+    // WooCommerce IDs are numbers, URL params are strings
+    const found = products.find(p => String(p.id) === id);
     if (found) {
       setProduct(found);
       setMainImage(found.image);
-      window.scrollTo(0, 0);
     }
-  }, [id]);
+  }, [id, products, loading]);
+
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh', flexDirection: 'column', gap: '20px' }}>
+        <div className="spinner" style={{ width: '40px', height: '40px', border: '4px solid #f3f3f3', borderTop: '4px solid var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
+        <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
+        <p>Loading product details...</p>
+      </div>
+    );
+  }
 
   if (!product) {
     return (
@@ -50,7 +61,13 @@ const ProductDetails = () => {
               <div className={`gallery-thumb ${mainImage === product.image ? 'active' : ''}`} onClick={() => setMainImage(product.image)}>
                 <img src={product.image} alt="Thumb" />
               </div>
-              {/* Additional thumbs could be added here if product data had more images */}
+              {product.images && product.images.length > 1 && product.images.map((img, idx) => (
+                img !== product.image && (
+                  <div key={idx} className={`gallery-thumb ${mainImage === img ? 'active' : ''}`} onClick={() => setMainImage(img)}>
+                    <img src={img} alt={`Thumb ${idx}`} />
+                  </div>
+                )
+              ))}
             </div>
           </div>
 
@@ -73,11 +90,7 @@ const ProductDetails = () => {
               )}
             </div>
 
-            <p className="detail-desc">
-              Experience the pinnacle of technology with the {product.name}. 
-              Engineered for excellence and designed to impress. Features top-tier performance, 
-              stunning visuals, and industry-leading reliability.
-            </p>
+            <div className="detail-desc" dangerouslySetInnerHTML={{ __html: product.description }}></div>
 
             <div className="qty-row">
               <span className="variant-label" style={{ marginBottom: 0 }}>Quantity:</span>
@@ -104,7 +117,7 @@ const ProductDetails = () => {
             <div className="detail-meta">
               <div className="meta-row">
                 <span className="meta-key">SKU:</span>
-                <span className="meta-value">TM-{product.id.toUpperCase()}</span>
+                <span className="meta-value">TM-{String(product.id).toUpperCase()}</span>
               </div>
               <div className="meta-row">
                 <span className="meta-key">Category:</span>

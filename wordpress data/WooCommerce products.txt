@@ -1,0 +1,736 @@
+[
+{
+id: 26,
+name: "Solar Charging Kit 200W",
+slug: "solar-charging-kit-200w",
+permalink: "https://api.panatribes.com/product/solar-charging-kit-200w/",
+date_created: "2026-06-07T10:28:12",
+date_created_gmt: "2026-06-07T10:28:12",
+date_modified: "2026-06-07T10:28:12",
+date_modified_gmt: "2026-06-07T10:28:12",
+type: "simple",
+status: "publish",
+featured: false,
+catalog_visibility: "visible",
+description: "<p>Foldable 200W panel — pair with any Panatribes power station.</p>
+<p class="text-sm font-semibold mb-3">Highlights</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-muted-foreground">Foldable 200W monocrystalline</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">ETFE coating, IP67</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">Built-in kickstand</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">MC4 + Anderson connectors</li>
+</ul>
+<div class="lg:col-span-2">
+<h2 class="font-display text-2xl font-bold">Specifications</h2>
+<div class="mt-5 rounded-2xl border border-border/60 overflow-hidden">
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Output200W peak<br />
+Efficiency23%</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Cell typeMonocrystalline</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Folded size62 × 54 × 4 cm</div>
+</div>
+</div>
+<aside>
+<h2 class="font-display text-2xl font-bold">What's in the box</h2>
+<div class="mt-5 rounded-2xl border border-border/60 bg-card/40 p-5 space-y-2">
+<p class="text-sm flex items-center gap-2">1 × Solar Charging Kit 200W</p>
+<p class="text-sm flex items-center gap-2">Charging cable</p>
+<p class="text-sm flex items-center gap-2">User manual</p>
+<p class="text-sm flex items-center gap-2">Panatribes warranty card</p>
+</div>
+</aside>
+",
+short_description: "<p>Foldable 200W panel — pair with any Panatribes power station.</p>
+",
+sku: "",
+price: "285000",
+regular_price: "285000",
+sale_price: "",
+date_on_sale_from: null,
+date_on_sale_from_gmt: null,
+date_on_sale_to: null,
+date_on_sale_to_gmt: null,
+on_sale: false,
+purchasable: true,
+total_sales: 0,
+virtual: false,
+downloadable: false,
+downloads: [ ],
+download_limit: -1,
+download_expiry: -1,
+external_url: "",
+button_text: "",
+tax_status: "taxable",
+tax_class: "",
+manage_stock: false,
+stock_quantity: null,
+backorders: "no",
+backorders_allowed: false,
+backordered: false,
+low_stock_amount: null,
+sold_individually: false,
+weight: "",
+dimensions: {
+length: "",
+width: "",
+height: ""
+},
+shipping_required: true,
+shipping_taxable: true,
+shipping_class: "",
+shipping_class_id: 0,
+reviews_allowed: true,
+average_rating: "0.00",
+rating_count: 0,
+upsell_ids: [ ],
+cross_sell_ids: [ ],
+parent_id: 0,
+purchase_note: "",
+categories: [
+{
+id: 20,
+name: "Solar",
+slug: "solar"
+}
+],
+brands: [
+{
+id: 25,
+name: "Panatribes Solar",
+slug: "panatribes-solar"
+}
+],
+tags: [ ],
+images: [
+{
+id: 20,
+date_created: "2026-06-07T10:04:19",
+date_created_gmt: "2026-06-07T10:04:19",
+date_modified: "2026-06-07T10:04:19",
+date_modified_gmt: "2026-06-07T10:04:19",
+src: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8.jpg",
+name: "cat-solar-CVov2Vx8",
+alt: "",
+srcset: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8.jpg 800w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8-300x300.jpg 300w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8-150x150.jpg 150w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8-768x768.jpg 768w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8-600x600.jpg 600w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8-100x100.jpg 100w",
+sizes: "(max-width: 800px) 100vw, 800px",
+thumbnail: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-solar-CVov2Vx8-300x300.jpg"
+}
+],
+attributes: [ ],
+default_attributes: [ ],
+variations: [ ],
+grouped_products: [ ],
+menu_order: 0,
+price_html: "<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>285,000.00</bdi></span>",
+related_ids: [ ],
+meta_data: [ ],
+stock_status: "instock",
+has_options: false,
+post_password: "",
+global_unique_id: "",
+_links: {
+self: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products/26",
+targetHints: {
+allow: [
+"GET",
+"POST",
+"PUT",
+"PATCH",
+"DELETE"
+]
+}
+}
+],
+collection: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products"
+}
+]
+}
+},
+{
+id: 25,
+name: "Home Backup Station 1500W",
+slug: "home-backup-station-1500w",
+permalink: "https://api.panatribes.com/product/home-backup-station-1500w/",
+date_created: "2026-06-07T10:23:34",
+date_created_gmt: "2026-06-07T10:23:34",
+date_modified: "2026-06-07T10:28:48",
+date_modified_gmt: "2026-06-07T10:28:48",
+type: "simple",
+status: "publish",
+featured: false,
+catalog_visibility: "visible",
+description: "<p>Whole-room backup. Fridge + TV + lights through the night.</p>
+<p class="text-sm font-semibold mb-3">Highlights</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-muted-foreground">1500W pure sine inverter</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">1280Wh LiFePO4 battery</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">Solar + AC fast charge</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">App-controlled</li>
+</ul>
+<h2 class="font-display text-2xl font-bold">Specifications</h2>
+<div class="mt-5 rounded-2xl border border-border/60 overflow-hidden">
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Capacity1280 Wh / 1500W<br />
+BatteryLiFePO4, 3500+ cycles<br />
+Solar inputUp to 400W</div>
+</div>
+<div></div>
+<div>
+<h2 class="font-display text-2xl font-bold">What's in the box</h2>
+<div class="mt-5 rounded-2xl border border-border/60 bg-card/40 p-5 space-y-2">
+<p class="text-sm flex items-center gap-2">1 × Home Backup Station 1500W</p>
+<p class="text-sm flex items-center gap-2">Charging cable</p>
+<p class="text-sm flex items-center gap-2">User manual</p>
+<p class="text-sm flex items-center gap-2">Panatribes warranty card</p>
+</div>
+</div>
+",
+short_description: "<p>Whole-room backup. Fridge + TV + lights through the night.</p>
+",
+sku: "",
+price: "720000",
+regular_price: "720000",
+sale_price: "",
+date_on_sale_from: null,
+date_on_sale_from_gmt: null,
+date_on_sale_to: null,
+date_on_sale_to_gmt: null,
+on_sale: false,
+purchasable: true,
+total_sales: 0,
+virtual: false,
+downloadable: false,
+downloads: [ ],
+download_limit: -1,
+download_expiry: -1,
+external_url: "",
+button_text: "",
+tax_status: "taxable",
+tax_class: "",
+manage_stock: false,
+stock_quantity: null,
+backorders: "no",
+backorders_allowed: false,
+backordered: false,
+low_stock_amount: null,
+sold_individually: false,
+weight: "",
+dimensions: {
+length: "",
+width: "",
+height: ""
+},
+shipping_required: true,
+shipping_taxable: true,
+shipping_class: "",
+shipping_class_id: 0,
+reviews_allowed: true,
+average_rating: "0.00",
+rating_count: 0,
+upsell_ids: [ ],
+cross_sell_ids: [ ],
+parent_id: 0,
+purchase_note: "",
+categories: [
+{
+id: 19,
+name: "Power",
+slug: "power"
+}
+],
+brands: [
+{
+id: 24,
+name: "Panatribes Power",
+slug: "panatribes-power"
+}
+],
+tags: [ ],
+images: [
+{
+id: 18,
+date_created: "2026-06-07T10:04:16",
+date_created_gmt: "2026-06-07T10:04:16",
+date_modified: "2026-06-07T10:04:16",
+date_modified_gmt: "2026-06-07T10:04:16",
+src: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899.jpg",
+name: "cat-power-4B3vV899",
+alt: "",
+srcset: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899.jpg 800w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899-300x300.jpg 300w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899-150x150.jpg 150w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899-768x768.jpg 768w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899-600x600.jpg 600w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899-100x100.jpg 100w",
+sizes: "(max-width: 800px) 100vw, 800px",
+thumbnail: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-power-4B3vV899-300x300.jpg"
+}
+],
+attributes: [ ],
+default_attributes: [ ],
+variations: [ ],
+grouped_products: [ ],
+menu_order: 0,
+price_html: "<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>720,000.00</bdi></span>",
+related_ids: [ ],
+meta_data: [ ],
+stock_status: "instock",
+has_options: false,
+post_password: "",
+global_unique_id: "",
+_links: {
+self: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products/25",
+targetHints: {
+allow: [
+"GET",
+"POST",
+"PUT",
+"PATCH",
+"DELETE"
+]
+}
+}
+],
+collection: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products"
+}
+]
+}
+},
+{
+id: 24,
+name: "Wireless Earbuds Plus ANC",
+slug: "wireless-earbuds-plus-anc",
+permalink: "https://api.panatribes.com/product/wireless-earbuds-plus-anc/",
+date_created: "2026-06-07T10:15:24",
+date_created_gmt: "2026-06-07T10:15:24",
+date_modified: "2026-06-07T10:16:34",
+date_modified_gmt: "2026-06-07T10:16:34",
+type: "simple",
+status: "publish",
+featured: false,
+catalog_visibility: "visible",
+description: "<p>Active noise cancelling earbuds with 30-hour case battery.</p>
+<p class="text-sm font-semibold mb-3">Highlights</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-muted-foreground">Hybrid ANC</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">30hr total battery</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">Bluetooth 5.3</li>
+<li class="flex items-start gap-2 text-sm text-muted-foreground">IPX5 sweat resistant</li>
+</ul>
+<h2 class="font-display text-2xl font-bold">Specifications</h2>
+<div class="mt-5 rounded-2xl border border-border/60 overflow-hidden">
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Bluetooth5.3<br />
+Battery8h buds + 22h case<br />
+Drivers11mm dynamic<br />
+ChargingUSB-C + wireless</div>
+</div>
+<div></div>
+<div>
+<div class="mt-16 grid lg:grid-cols-3 gap-10">
+<aside>
+<h2 class="font-display text-2xl font-bold">What's in the box</h2>
+<div class="mt-5 rounded-2xl border border-border/60 bg-card/40 p-5 space-y-2">
+<p class="text-sm flex items-center gap-2">1 × Wireless Earbuds Plus ANC</p>
+<p class="text-sm flex items-center gap-2">Charging cable</p>
+<p class="text-sm flex items-center gap-2">User manual</p>
+<p class="text-sm flex items-center gap-2">Panatribes warranty card</p>
+</div>
+</aside>
+</div>
+</div>
+",
+short_description: "<p>Active noise cancelling earbuds with 30-hour case battery.</p>
+",
+sku: "",
+price: "65000",
+regular_price: "78000",
+sale_price: "65000",
+date_on_sale_from: null,
+date_on_sale_from_gmt: null,
+date_on_sale_to: null,
+date_on_sale_to_gmt: null,
+on_sale: true,
+purchasable: true,
+total_sales: 0,
+virtual: false,
+downloadable: false,
+downloads: [ ],
+download_limit: -1,
+download_expiry: -1,
+external_url: "",
+button_text: "",
+tax_status: "taxable",
+tax_class: "",
+manage_stock: false,
+stock_quantity: null,
+backorders: "no",
+backorders_allowed: false,
+backordered: false,
+low_stock_amount: null,
+sold_individually: false,
+weight: "",
+dimensions: {
+length: "",
+width: "",
+height: ""
+},
+shipping_required: true,
+shipping_taxable: true,
+shipping_class: "",
+shipping_class_id: 0,
+reviews_allowed: true,
+average_rating: "0.00",
+rating_count: 0,
+upsell_ids: [ ],
+cross_sell_ids: [ ],
+parent_id: 0,
+purchase_note: "",
+categories: [
+{
+id: 18,
+name: "Audio",
+slug: "audio"
+}
+],
+brands: [
+{
+id: 23,
+name: "Panatribes Audio",
+slug: "panatribes-audio"
+}
+],
+tags: [ ],
+images: [
+{
+id: 15,
+date_created: "2026-06-07T10:04:12",
+date_created_gmt: "2026-06-07T10:04:12",
+date_modified: "2026-06-07T10:04:12",
+date_modified_gmt: "2026-06-07T10:04:12",
+src: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ.jpg",
+name: "cat-audio-BhfgX7iZ",
+alt: "",
+srcset: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ.jpg 800w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ-300x300.jpg 300w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ-150x150.jpg 150w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ-768x768.jpg 768w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ-600x600.jpg 600w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ-100x100.jpg 100w",
+sizes: "(max-width: 800px) 100vw, 800px",
+thumbnail: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-audio-BhfgX7iZ-300x300.jpg"
+}
+],
+attributes: [ ],
+default_attributes: [ ],
+variations: [ ],
+grouped_products: [ ],
+menu_order: 0,
+price_html: "<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>78,000.00</bdi></span></del> <span class="screen-reader-text">Original price was: &#036;78,000.00.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>65,000.00</bdi></span></ins><span class="screen-reader-text">Current price is: &#036;65,000.00.</span>",
+related_ids: [ ],
+meta_data: [ ],
+stock_status: "instock",
+has_options: false,
+post_password: "",
+global_unique_id: "",
+_links: {
+self: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products/24",
+targetHints: {
+allow: [
+"GET",
+"POST",
+"PUT",
+"PATCH",
+"DELETE"
+]
+}
+}
+],
+collection: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products"
+}
+]
+}
+},
+{
+id: 23,
+name: "Ultraslim Laptop 14" Pro",
+slug: "ultraslim-laptop-14-pro",
+permalink: "https://api.panatribes.com/product/ultraslim-laptop-14-pro/",
+date_created: "2026-06-07T10:08:45",
+date_created_gmt: "2026-06-07T10:08:45",
+date_modified: "2026-06-07T10:08:45",
+date_modified_gmt: "2026-06-07T10:08:45",
+type: "simple",
+status: "publish",
+featured: false,
+catalog_visibility: "visible",
+description: "<h2 class="font-display text-2xl font-bold">Specifications</h2>
+<div class="mt-5 rounded-2xl border border-border/60 overflow-hidden">
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">ProcessorIntel Core i7-1360P</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm ">Display14" 2.8K OLED</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">RAM16 GB LPDDR5</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm ">Storage512 GB NVMe SSD</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">BatteryUp to 14 hours</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm ">Weight1.29 kg</div>
+</div>
+<div></div>
+<div>
+<h2 class="font-display text-2xl font-bold">What's in the box</h2>
+<div class="mt-5 rounded-2xl border border-border/60 bg-card/40 p-5 space-y-2">
+<p class="text-sm flex items-center gap-2">1 × Ultraslim Laptop 14" Pro</p>
+<p class="text-sm flex items-center gap-2">Charging cable</p>
+<p class="text-sm flex items-center gap-2">User manual</p>
+<p class="text-sm flex items-center gap-2">Panatribes warranty card</p>
+</div>
+</div>
+",
+short_description: "",
+sku: "",
+price: "462000",
+regular_price: "462000",
+sale_price: "",
+date_on_sale_from: null,
+date_on_sale_from_gmt: null,
+date_on_sale_to: null,
+date_on_sale_to_gmt: null,
+on_sale: false,
+purchasable: true,
+total_sales: 0,
+virtual: false,
+downloadable: false,
+downloads: [ ],
+download_limit: -1,
+download_expiry: -1,
+external_url: "",
+button_text: "",
+tax_status: "taxable",
+tax_class: "",
+manage_stock: false,
+stock_quantity: null,
+backorders: "no",
+backorders_allowed: false,
+backordered: false,
+low_stock_amount: null,
+sold_individually: false,
+weight: "",
+dimensions: {
+length: "",
+width: "",
+height: ""
+},
+shipping_required: true,
+shipping_taxable: true,
+shipping_class: "",
+shipping_class_id: 0,
+reviews_allowed: true,
+average_rating: "0.00",
+rating_count: 0,
+upsell_ids: [ ],
+cross_sell_ids: [ ],
+parent_id: 0,
+purchase_note: "",
+categories: [
+{
+id: 17,
+name: "Laptops",
+slug: "laptops"
+}
+],
+brands: [
+{
+id: 22,
+name: "Panatribes",
+slug: "panatribes"
+}
+],
+tags: [ ],
+images: [
+{
+id: 16,
+date_created: "2026-06-07T10:04:14",
+date_created_gmt: "2026-06-07T10:04:14",
+date_modified: "2026-06-07T10:04:14",
+date_modified_gmt: "2026-06-07T10:04:14",
+src: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX.jpg",
+name: "cat-laptops-DjjMu2MX",
+alt: "",
+srcset: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX.jpg 800w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX-300x300.jpg 300w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX-150x150.jpg 150w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX-768x768.jpg 768w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX-600x600.jpg 600w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX-100x100.jpg 100w",
+sizes: "(max-width: 800px) 100vw, 800px",
+thumbnail: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-laptops-DjjMu2MX-300x300.jpg"
+}
+],
+attributes: [ ],
+default_attributes: [ ],
+variations: [ ],
+grouped_products: [ ],
+menu_order: 0,
+price_html: "<span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>462,000.00</bdi></span>",
+related_ids: [ ],
+meta_data: [ ],
+stock_status: "instock",
+has_options: false,
+post_password: "",
+global_unique_id: "",
+_links: {
+self: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products/23",
+targetHints: {
+allow: [
+"GET",
+"POST",
+"PUT",
+"PATCH",
+"DELETE"
+]
+}
+}
+],
+collection: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products"
+}
+]
+}
+},
+{
+id: 14,
+name: "PanaPro Flagship X1 5G",
+slug: "panapro-flagship-x1-5g",
+permalink: "https://api.panatribes.com/product/panapro-flagship-x1-5g/",
+date_created: "2026-06-07T10:04:48",
+date_created_gmt: "2026-06-07T10:04:48",
+date_modified: "2026-06-07T10:04:48",
+date_modified_gmt: "2026-06-07T10:04:48",
+type: "simple",
+status: "publish",
+featured: false,
+catalog_visibility: "visible",
+description: "<h2 class="font-display text-2xl font-bold">Specifications</h2>
+<div class="mt-5 rounded-2xl border border-border/60 overflow-hidden">
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Display6.7" AMOLED 120Hz</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm ">ProcessorOcta-core 3.2GHz</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">RAM12 GB</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm ">Storage256 GB / 512 GB</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm bg-card/40">Battery5000 mAh, 65W charge</div>
+<div class="grid grid-cols-3 px-5 py-3.5 text-sm ">OSAndroid 14</div>
+</div>
+<div>
+<h2 class="font-display text-2xl font-bold">What's in the box</h2>
+<div class="mt-5 rounded-2xl border border-border/60 bg-card/40 p-5 space-y-2">
+<p class="text-sm flex items-center gap-2">1 × PanaPro Flagship X1 5G</p>
+<p class="text-sm flex items-center gap-2">Charging cable</p>
+<p class="text-sm flex items-center gap-2">User manual</p>
+<p class="text-sm flex items-center gap-2">Panatribes warranty card</p>
+</div>
+</div>
+",
+short_description: "",
+sku: "",
+price: "850000",
+regular_price: "924000",
+sale_price: "850000",
+date_on_sale_from: null,
+date_on_sale_from_gmt: null,
+date_on_sale_to: null,
+date_on_sale_to_gmt: null,
+on_sale: true,
+purchasable: true,
+total_sales: 0,
+virtual: false,
+downloadable: false,
+downloads: [ ],
+download_limit: -1,
+download_expiry: -1,
+external_url: "",
+button_text: "",
+tax_status: "taxable",
+tax_class: "",
+manage_stock: false,
+stock_quantity: null,
+backorders: "no",
+backorders_allowed: false,
+backordered: false,
+low_stock_amount: null,
+sold_individually: false,
+weight: "",
+dimensions: {
+length: "",
+width: "",
+height: ""
+},
+shipping_required: true,
+shipping_taxable: true,
+shipping_class: "",
+shipping_class_id: 0,
+reviews_allowed: true,
+average_rating: "0.00",
+rating_count: 0,
+upsell_ids: [ ],
+cross_sell_ids: [ ],
+parent_id: 0,
+purchase_note: "",
+categories: [
+{
+id: 16,
+name: "Smartphones",
+slug: "smartphones"
+}
+],
+brands: [
+{
+id: 21,
+name: "PanaPro",
+slug: "panapro"
+}
+],
+tags: [ ],
+images: [
+{
+id: 17,
+date_created: "2026-06-07T10:04:15",
+date_created_gmt: "2026-06-07T10:04:15",
+date_modified: "2026-06-07T10:04:15",
+date_modified_gmt: "2026-06-07T10:04:15",
+src: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp.jpg",
+name: "cat-phones-C0iA7PIp",
+alt: "",
+srcset: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp.jpg 800w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp-300x300.jpg 300w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp-150x150.jpg 150w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp-768x768.jpg 768w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp-600x600.jpg 600w, https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp-100x100.jpg 100w",
+sizes: "(max-width: 800px) 100vw, 800px",
+thumbnail: "https://api.panatribes.com/wp-content/uploads/2026/06/cat-phones-C0iA7PIp-300x300.jpg"
+}
+],
+attributes: [ ],
+default_attributes: [ ],
+variations: [ ],
+grouped_products: [ ],
+menu_order: 0,
+price_html: "<del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>924,000.00</bdi></span></del> <span class="screen-reader-text">Original price was: &#036;924,000.00.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>850,000.00</bdi></span></ins><span class="screen-reader-text">Current price is: &#036;850,000.00.</span>",
+related_ids: [ ],
+meta_data: [ ],
+stock_status: "instock",
+has_options: false,
+post_password: "",
+global_unique_id: "",
+_links: {
+self: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products/14",
+targetHints: {
+allow: [
+"GET",
+"POST",
+"PUT",
+"PATCH",
+"DELETE"
+]
+}
+}
+],
+collection: [
+{
+href: "https://api.panatribes.com/wp-json/wc/v3/products"
+}
+]
+}
+}
+]
